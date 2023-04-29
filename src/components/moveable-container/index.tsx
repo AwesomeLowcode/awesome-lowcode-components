@@ -2,12 +2,15 @@ import * as React from "react";
 import { createElement } from "react";
 import Moveable from "react-moveable";
 
+import { Button } from '@alifd/next';
+
 export default function App(props) {
   const { _leaf, componentId } = props;
   console.log('_leaf: ', _leaf);
   if (_leaf?.parent) {
     _leaf.parent.isRGLContainerNode = true;
   }
+  window.parent.AliLowCodeEngine.config.set('enableMouseEventPropagationInCanvas', true);
 
 
   // React.Children.map(children, (child) => {
@@ -50,8 +53,11 @@ export default function App(props) {
   const targetRef = React.useRef();
 
   return (
-    <div style={{width: 500, height: 500}} ref={targetRef}>
+    <div  style={{width: 500, height: 500}} {...props}>
+      <div  ref={targetRef}>
 
+        <Button >123</Button>
+      </div>
       <Moveable
         target={targetRef}
         draggable

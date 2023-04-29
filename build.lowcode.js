@@ -12,7 +12,7 @@ module.exports = {
         library,
         engineScope: "@alilc",
         extraAssets: [
-          'https://alifd.alicdn.com/npm/@alifd/layout@2.0.12/build/lowcode/assets-prod.json'
+          'https://alifd.alicdn.com/npm/@alifd/fusion-ui@2.0.1/build/lowcode/assets-prod.json'
         ]
       },
     ],
