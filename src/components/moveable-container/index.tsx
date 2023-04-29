@@ -53,8 +53,8 @@ export default function App(props) {
   const targetRef = React.useRef();
 
   return (
-    <div  style={{width: 500, height: 500}} {...props}>
-      <div  ref={targetRef}>
+    <div style={{width: 500, height: 500}} {...props}>
+      <div className="react-resizable-handle"  ref={targetRef}>
 
         <Button >123</Button>
       </div>
