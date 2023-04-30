@@ -18,7 +18,7 @@ const MoveableContainer: IPublicTypeComponentMetadata = {
     props: [
     ],
     supports: {
-      style: false,
+      style: true,
       condition: false,
       loop: false
     },
